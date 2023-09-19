@@ -1,6 +1,6 @@
 ####clonar proyecto con git
 
-#### seleccionar rama
+#### seleccionar rama develop
 
 #### instalar dependencias con maven
 maven clean install
