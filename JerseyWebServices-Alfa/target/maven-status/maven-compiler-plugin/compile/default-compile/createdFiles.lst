@@ -1,0 +1,7 @@
+com\freeLearn\controller.class
+META-INF\hk2-locator\default
+com\freeLearn\service\MessajeLocal.class
+com\freeLearn\config\AutoScanFeature.class
+com\freeLearn\service\MessageService.class
+com\freeLearn\Service.class
+com\freeLearn\MainApp.class
