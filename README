@@ -1,0 +1,14 @@
+####clonar proyecto con git
+
+#### seleccionar rama
+
+#### instalar dependencias con maven
+maven clean install
+
+#### limpiar y construir proyecto
+
+#### correr .jar de carpeta /target
+
+
+##### probar servicio desde el navegador
+http://localhost:9999/service/getartsPage/medicina/1
