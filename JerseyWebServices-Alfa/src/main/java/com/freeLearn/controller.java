@@ -70,10 +70,10 @@ public class controller {
                 JSONObject json = new JSONObject(response.toString());
                 JSONArray jsonArray = (JSONArray) json.get("results");
 
-                ////respuesta=""+jsonArray.getJSONObject(1);
-                for (int i = 0; i < jsonArray.length(); i++) {
-                    respuesta += "" + jsonArray.getJSONObject(i);
-                }
+                respuesta=""+jsonArray.toString();
+//                for (int i = 0; i < jsonArray.length(); i++) {
+//                    respuesta += "" + jsonArray.getJSONObject(i);
+//                }
                 System.out.println("respuesta de API Doaj:: " + respuesta);
             } else {
                 System.out.println("fallo al intentar obtener la pagina http:: " + url);

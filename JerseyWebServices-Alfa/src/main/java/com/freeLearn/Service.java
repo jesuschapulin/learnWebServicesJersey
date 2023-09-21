@@ -13,6 +13,7 @@ import jakarta.ws.rs.core.MediaType;
 import com.freeLearn.controller;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import jakarta.ws.rs.PathParam;
+import jakarta.ws.rs.core.Response;
 
 @Path("/service")
 public class Service {
@@ -35,7 +36,7 @@ public class Service {
     @Path("getartsPage/{words}/{size}")
     @GET
     @Produces(MediaType.APPLICATION_JSON + "; charset=UTF-8")
-    public String getartsPage(@PathParam("words") String words,@PathParam("size") String size){
+    public Response getartsPage(@PathParam("words") String words,@PathParam("size") String size){
             String result="";
             String url="";		   
 
@@ -52,7 +53,9 @@ public class Service {
                     ex.printStackTrace();
             }
 
-            return result;
+            return Response.ok()
+               .entity(result)
+               .header("Access-Control-Allow-Origin", "*")
+               .build();
     }
-
 }
